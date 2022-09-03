@@ -306,8 +306,8 @@ main {
 
 .acceptButton {
     background-size: 5rem 5rem;
-    height: 5rem;
-    width: 5rem;
+    height: 3.5rem;
+    width: 3.5rem;
     background-repeat: no-repeat;
     background-position: center;
     background-color: white;
