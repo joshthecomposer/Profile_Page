@@ -12,7 +12,6 @@
     margin: 0;
     border: 0;
     padding:  0;
-    /* font-size: 100%; */
     box-sizing: border-box;
     vertical-align: top;
     outline: 0;
@@ -26,11 +25,17 @@ body {
 
 .nav {
     height: 7rem;
-    display: flex;
-    align-items: center;
     background-color: black;
     color: white;
     overflow: show;
+}
+
+.navMain {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 100rem; 
+    min-width: 85rem;
 }
 
 h1 {
@@ -38,29 +43,20 @@ h1 {
 }
 
 .logo {
-    margin: 0 0 0 5%;
+    margin-left: 3rem;
     display: flex;
-    flex: 1;
 }
 
-.navLinks {
-    display: flex;
-    flex: 5;
-}
-.button-container {
-    display: flex;
-    margin: 0 5% 0 0;
-}
 .button {
+    border-radius: .3rem;
+    margin-left: auto;
+    margin-right: 3rem;
+    justify-self: flex-end;
     padding: .5rem 2rem;
     color: white;
     height: 4rem;
     background-color: #17A2B8;
     font-size: 1.6rem;
-    display: flex;
-    flex: 1;
-    justify-self: flex-end;
-    line-height: 1;
 }
 
 .button:hover {
@@ -78,11 +74,7 @@ h1 {
     margin-left: 2rem;
 }
 
-.navContent {
-    display: flex;
-}
-
-.navLinks a {
+.link a {
     text-decoration: none;
     font-size: 1.6rem;
     color: white;
@@ -93,12 +85,11 @@ a:hover {
 }
 
 main {
-    margin: 3rem 5%;
+    margin: 3rem auto;
     display: flex;
-    /* flex-wrap: wrap; */
     gap: 3rem;
-    /* margin: 3rem 15rem; */
-    /* width: 70%; */
+    max-width: 100rem;
+    min-width: 85rem;
 }
 
 /* Main Content Columns */
@@ -109,6 +100,7 @@ main {
     gap: 3rem;
     flex: 3;
     min-width: 27rem;
+    margin: 0 0 0 3rem;
 }
 
 /* Col1 Rows */
@@ -213,6 +205,7 @@ main {
 }
 
 .col2 {
+    margin: 0 3rem 0 0;
     display: flex;
     flex-direction: column;
     gap: 3rem;
